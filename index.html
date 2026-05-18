@@ -867,7 +867,7 @@
     </div>
 
     <!-- Botón flotante de WhatsApp (derecha) -->
-    <a href="https://wa.me/584262222885?text=¡Hola!%20Quiero%20consultar%20por%20los%20dulces%20de%20Karam's" 
+    <a href="https://wa.me/584147136737?text=¡Hola!%20Quiero%20consultar%20por%20el%20menú%20de%20Pa' Q' Bandido" 
        class="whatsapp-btn" 
        target="_blank" 
        rel="noopener noreferrer">
@@ -895,7 +895,7 @@
 
     <footer>
         <div class="logo" style="color: #f2ded3;">Pa'Q' Bandido</div>
-        <div class="social-footer">
+        <div class="social-footer"> 
             <div class="social-icons">
                 <a href="https://www.tiktok.com/@karams.oficial" class="social-icon"><i class="fab fa-tiktok"></i></a>
             </div>
@@ -999,11 +999,11 @@
         // Finalizar pedido (WhatsApp)
         function checkout() {
             if (Object.keys(cart).length === 0) {
-                alert('🛒 Tu carrito está vacío. Agrega algunos dulces primero.');
+                alert('🛒 Tu carrito está vacío. Agrega tu pedido primero.');
                 return;
             }
             
-            let mensaje = "🍰 *Pedido Pa' Q' El Bandido* 🍰";
+            let mensaje = " *Pedido Pa' Q' El Bandido* ";
             let total = 0;
             
             for (const [idStr, cantidad] of Object.entries(cart)) {
@@ -1016,7 +1016,7 @@
             }
             
             mensaje += `*Total: $${total.toFixed(2)}*`;
-            mensaje += `¡Gracias por tu pedido! 🧁`;
+            mensaje += `¡Gracias por tu pedido! `;
             
             window.open(`https://wa.me/584147136737?text=${encodeURIComponent(mensaje)}`, '_blank');
         }
